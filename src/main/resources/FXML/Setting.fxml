@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="645.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.zhw.controller.SettingController">
+	<children>
+      <Label fx:id="language" layoutX="112.0" layoutY="64.0" text="语言 : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="mbLanguage" alignment="CENTER" layoutX="177.0" layoutY="61.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Language" textOverrun="CENTER_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+         <items>
+            <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+               <content>
+                  <Label fx:id="english" alignment="CENTER" text="English">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </content>
+            </CustomMenuItem>
+            <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+               <content>
+                  <Label fx:id="simpleChinese" alignment="CENTER" text="简体中文">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </content>
+            </CustomMenuItem>
+         </items>
+      </MenuButton>
+	</children>
+</AnchorPane>
